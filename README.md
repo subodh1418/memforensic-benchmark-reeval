@@ -1,4 +1,7 @@
-# Reproducibility package: What Limits Memory-Forensic Malware Classification?
+﻿# Reproducibility package: What Limits Memory-Forensic Malware Classification?
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23976567.svg)](https://doi.org/10.5281/zenodo.23976567)
+
 
 Code, split information, per-seed predictions and derived results for the paper
 "What Limits Memory-Forensic Malware Classification? A Leakage-Controlled Re-evaluation of CIC-MalMem-2022".

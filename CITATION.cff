@@ -8,3 +8,4 @@ license: MIT
 repository-code: "https://github.com/subodh1418/memforensic-benchmark-reeval"
 keywords: [memory forensics, malware detection, CIC-MalMem-2022, MalVol-25, reproducibility, benchmark]
 version: 1.0.0
+doi: 10.5281/zenodo.23976567
