@@ -1,4 +1,4 @@
-﻿# Reproducibility package: What Limits Memory-Forensic Malware Classification?
+# Reproducibility package: What Limits Memory-Forensic Malware Classification?
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23976567.svg)](https://doi.org/10.5281/zenodo.23976567)
 
