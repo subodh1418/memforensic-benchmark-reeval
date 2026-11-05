@@ -1,0 +1,206 @@
+{
+  "test_row": 41728,
+  "true_class": "Malware",
+  "predicted_class": "Malware",
+  "task_probabilities": {
+    "Benign": 8.725560798803032e-07,
+    "Malware": 0.9999991274439203
+  },
+  "lhg_path": {
+    "P(malware)": 0.9999991274439202,
+    "top_families": {
+      "TIBS": 0.9999231635804986,
+      "Pysa": 9.723542161226961e-06,
+      "Ako": 9.462692943300557e-06
+    }
+  },
+  "fig_evidence": [
+    {
+      "feature": "handles.nsection",
+      "value": 71.0,
+      "shap": 4.703607556100696,
+      "community": 0
+    },
+    {
+      "feature": "handles.nfile",
+      "value": 475.0,
+      "shap": 4.268220869620545,
+      "community": 0
+    },
+    {
+      "feature": "ldrmodules.not_in_load_avg",
+      "value": 0.026041667,
+      "shap": -3.659818705844105,
+      "community": 0
+    },
+    {
+      "feature": "dlllist.avg_dlls_per_proc",
+      "value": 42.54545455,
+      "shap": -2.5223519687427083,
+      "community": 2
+    },
+    {
+      "feature": "ldrmodules.not_in_init_avg",
+      "value": 0.047916667,
+      "shap": -2.128659168569118,
+      "community": 0
+    },
+    {
+      "feature": "handles.nsemaphore",
+      "value": 376.0,
+      "shap": 1.8921098547169717,
+      "community": 0
+    },
+    {
+      "feature": "handles.avg_handles_per_proc",
+      "value": 241.6818182,
+      "shap": -1.8387393389785631,
+      "community": 2
+    },
+    {
+      "feature": "ldrmodules.not_in_load",
+      "value": 25.0,
+      "shap": -1.6433715994263718,
+      "community": 0
+    }
+  ],
+  "fig_evidence_edges": [
+    {
+      "u": "handles.nsection",
+      "v": "ldrmodules.not_in_load_avg",
+      "weight": 0.6146348248627426
+    },
+    {
+      "u": "handles.nsection",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.8416573639786605
+    },
+    {
+      "u": "handles.nfile",
+      "v": "handles.nsection",
+      "weight": 0.9367932597008993
+    },
+    {
+      "u": "handles.nfile",
+      "v": "ldrmodules.not_in_load_avg",
+      "weight": 0.599421155013383
+    },
+    {
+      "u": "handles.nfile",
+      "v": "handles.nsemaphore",
+      "weight": 0.8850444658068682
+    },
+    {
+      "u": "handles.nfile",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.8124188306601182
+    },
+    {
+      "u": "ldrmodules.not_in_load_avg",
+      "v": "ldrmodules.not_in_init_avg",
+      "weight": 0.7247799469974864
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nsection",
+      "weight": 0.7577325829037117
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nfile",
+      "weight": 0.7219186640659153
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "ldrmodules.not_in_load_avg",
+      "weight": 0.5836151963161211
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nsemaphore",
+      "weight": 0.7651261293624567
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.avg_handles_per_proc",
+      "weight": 0.9445308389975727
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.7010450821510441
+    },
+    {
+      "u": "handles.nsemaphore",
+      "v": "handles.nsection",
+      "weight": 0.900669372718452
+    },
+    {
+      "u": "handles.nsemaphore",
+      "v": "ldrmodules.not_in_load_avg",
+      "weight": 0.6868317569385324
+    },
+    {
+      "u": "handles.nsemaphore",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.9192920721889943
+    },
+    {
+      "u": "handles.avg_handles_per_proc",
+      "v": "handles.nsection",
+      "weight": 0.7466491766302857
+    },
+    {
+      "u": "handles.avg_handles_per_proc",
+      "v": "handles.nfile",
+      "weight": 0.7525714114017549
+    },
+    {
+      "u": "handles.avg_handles_per_proc",
+      "v": "ldrmodules.not_in_load_avg",
+      "weight": 0.5674717004695383
+    },
+    {
+      "u": "handles.avg_handles_per_proc",
+      "v": "handles.nsemaphore",
+      "weight": 0.735068731623653
+    },
+    {
+      "u": "handles.avg_handles_per_proc",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.6508144236419172
+    },
+    {
+      "u": "ldrmodules.not_in_load",
+      "v": "ldrmodules.not_in_load_avg",
+      "weight": 0.8515428391166082
+    },
+    {
+      "u": "ldrmodules.not_in_load",
+      "v": "ldrmodules.not_in_init_avg",
+      "weight": 0.3
+    }
+  ],
+  "ssg_prototypes": [
+    {
+      "family": "TIBS",
+      "distance": 0.1464933604001999
+    },
+    {
+      "family": "TIBS",
+      "distance": 0.2183125615119934
+    },
+    {
+      "family": "TIBS",
+      "distance": 0.34129321575164795
+    },
+    {
+      "family": "TIBS",
+      "distance": 0.8533243536949158
+    },
+    {
+      "family": "TIBS",
+      "distance": 0.860834538936615
+    }
+  ]
+}

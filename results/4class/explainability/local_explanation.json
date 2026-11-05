@@ -1,0 +1,208 @@
+{
+  "test_row": 44201,
+  "true_class": "Spyware",
+  "predicted_class": "Spyware",
+  "task_probabilities": {
+    "Benign": 6.213344778099705e-05,
+    "Ransomware": 0.052352521137965305,
+    "Spyware": 0.8700167425547822,
+    "Trojan": 0.07756860285947159
+  },
+  "lhg_path": {
+    "P(malware)": 0.9999115790678555,
+    "top_families": {
+      "Transponder": 0.49096165269095227,
+      "Gator": 0.17096938248937496,
+      "CWS": 0.1482524463226615
+    }
+  },
+  "fig_evidence": [
+    {
+      "feature": "handles.nsemaphore",
+      "value": 594.0,
+      "shap": 2.917253830041707,
+      "community": 0
+    },
+    {
+      "feature": "ldrmodules.not_in_load",
+      "value": 42.0,
+      "shap": 1.7127817539673054,
+      "community": 0
+    },
+    {
+      "feature": "handles.nthread",
+      "value": 664.0,
+      "shap": 1.229387290605741,
+      "community": 0
+    },
+    {
+      "feature": "svcscan.nservices",
+      "value": 389.0,
+      "shap": 1.223767883331756,
+      "community": 2
+    },
+    {
+      "feature": "handles.nevent",
+      "value": 2815.0,
+      "shap": 1.1750730734161579,
+      "community": 0
+    },
+    {
+      "feature": "ldrmodules.not_in_init_avg",
+      "value": 0.053645117,
+      "shap": 1.1082873847307442,
+      "community": 0
+    },
+    {
+      "feature": "handles.nkey",
+      "value": 666.0,
+      "shap": 1.0799854883823028,
+      "community": 0
+    },
+    {
+      "feature": "ldrmodules.not_in_mem_avg",
+      "value": 0.028885832,
+      "shap": 0.8864758141390274,
+      "community": 0
+    }
+  ],
+  "fig_evidence_edges": [
+    {
+      "u": "handles.nsemaphore",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.9192920721889943
+    },
+    {
+      "u": "handles.nsemaphore",
+      "v": "svcscan.nservices",
+      "weight": 0.7993208182366103
+    },
+    {
+      "u": "handles.nsemaphore",
+      "v": "ldrmodules.not_in_mem_avg",
+      "weight": 0.6869947508460439
+    },
+    {
+      "u": "ldrmodules.not_in_load",
+      "v": "svcscan.nservices",
+      "weight": 0.7439676328026491
+    },
+    {
+      "u": "ldrmodules.not_in_load",
+      "v": "ldrmodules.not_in_init_avg",
+      "weight": 0.3
+    },
+    {
+      "u": "ldrmodules.not_in_load",
+      "v": "ldrmodules.not_in_mem_avg",
+      "weight": 0.8516484698978761
+    },
+    {
+      "u": "handles.nthread",
+      "v": "handles.nsemaphore",
+      "weight": 0.9301096442158224
+    },
+    {
+      "u": "handles.nthread",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.854203523873453
+    },
+    {
+      "u": "handles.nthread",
+      "v": "svcscan.nservices",
+      "weight": 0.8616331001851166
+    },
+    {
+      "u": "handles.nthread",
+      "v": "ldrmodules.not_in_mem_avg",
+      "weight": 0.6057942234380326
+    },
+    {
+      "u": "handles.nevent",
+      "v": "handles.nsemaphore",
+      "weight": 0.938417481381638
+    },
+    {
+      "u": "handles.nevent",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.8706152548428563
+    },
+    {
+      "u": "handles.nevent",
+      "v": "handles.nthread",
+      "weight": 0.9783462768677458
+    },
+    {
+      "u": "handles.nevent",
+      "v": "svcscan.nservices",
+      "weight": 0.8591381909629752
+    },
+    {
+      "u": "handles.nevent",
+      "v": "handles.nkey",
+      "weight": 0.825958484196573
+    },
+    {
+      "u": "handles.nevent",
+      "v": "ldrmodules.not_in_mem_avg",
+      "weight": 0.6287975091519316
+    },
+    {
+      "u": "ldrmodules.not_in_init_avg",
+      "v": "ldrmodules.not_in_mem_avg",
+      "weight": 0.7250260476833272
+    },
+    {
+      "u": "handles.nkey",
+      "v": "handles.nsemaphore",
+      "weight": 0.9077792312227935
+    },
+    {
+      "u": "handles.nkey",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.9081401153158678
+    },
+    {
+      "u": "handles.nkey",
+      "v": "handles.nthread",
+      "weight": 0.8116888157092702
+    },
+    {
+      "u": "handles.nkey",
+      "v": "svcscan.nservices",
+      "weight": 0.7515778634003288
+    },
+    {
+      "u": "handles.nkey",
+      "v": "ldrmodules.not_in_mem_avg",
+      "weight": 0.7564496121051061
+    },
+    {
+      "u": "ldrmodules.not_in_mem_avg",
+      "v": "svcscan.nservices",
+      "weight": 0.608158476970405
+    }
+  ],
+  "ssg_prototypes": [
+    {
+      "family": "Transponder",
+      "distance": 0.02577311173081398
+    },
+    {
+      "family": "Gator",
+      "distance": 0.026107527315616608
+    },
+    {
+      "family": "Gator",
+      "distance": 0.030343063175678253
+    },
+    {
+      "family": "Gator",
+      "distance": 0.03136299178004265
+    },
+    {
+      "family": "Gator",
+      "distance": 0.03147798031568527
+    }
+  ]
+}

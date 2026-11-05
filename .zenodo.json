@@ -1,0 +1,30 @@
+{
+  "title": "Code and results for: What Limits Memory-Forensic Malware Classification? A Leakage-Controlled Re-evaluation of CIC-MalMem-2022",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Tiwari, Subodh"
+    }
+  ],
+  "description": "Code, split information, per-seed predictions and derived results for a leakage-controlled re-evaluation of memory-forensic malware classification on CIC-MalMem-2022, with an external test on MalVol-25. Datasets are not included; see README.",
+  "keywords": [
+    "memory forensics",
+    "malware detection",
+    "CIC-MalMem-2022",
+    "MalVol-25",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.21227/kg5b-nf37",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "https://www.unb.ca/cic/datasets/malmem-2022.html",
+      "relation": "references",
+      "scheme": "url"
+    }
+  ]
+}

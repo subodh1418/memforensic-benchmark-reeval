@@ -1,0 +1,5 @@
+extractor,model,n_images,argmax_ransomware,among_malware,malware_category_predicted,pairs
+Volatility 3,LightGBM,10,0.0,0.0,Spyware=2;Trojan=8,LuckyLcoker;Cerber;DeriaLock;Dharma;GandCrab;GoldenEye;InfinityCrypt;Locky.AZ;SporaRansomware;WannaCry
+Volatility 3,MemHSE,10,0.0,0.0,Spyware=2;Trojan=8,LuckyLcoker;Cerber;DeriaLock;Dharma;GandCrab;GoldenEye;InfinityCrypt;Locky.AZ;SporaRansomware;WannaCry
+Volatility 2.6,LightGBM,4,0.0,0.0,Spyware=4,LuckyLcoker;Cerber;Dharma;WannaCry
+Volatility 2.6,MemHSE,4,0.0,0.0,Spyware=4,LuckyLcoker;Cerber;Dharma;WannaCry

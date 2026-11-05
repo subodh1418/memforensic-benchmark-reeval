@@ -1,0 +1,6 @@
+expert,n_nodes,plugins,node_attribution_sum,meta_contribution_share,top_nodes
+E_comm0,25,"dlllist,handles,ldrmodules,malfind,modules,pslist,svcscan",0.5989350272056463,0.23635659877258147,handles.nfile;handles.nsection;handles.nkey;handles.nevent;handles.nmutant
+E_comm1,14,psxview,0.04480351328310209,0.025223422012481553,psxview.not_in_deskthrd_false_avg;psxview.not_in_session_false_avg;psxview.not_in_csrss_handles_false_avg;psxview.not_in_pslist_false_avg;psxview.not_in_ethread_pool_false_avg
+E_comm2,13,"callbacks,dlllist,handles,pslist,svcscan",0.3562614595112515,0.1905084279977152,svcscan.nservices;handles.avg_handles_per_proc;dlllist.avg_dlls_per_proc;pslist.avg_threads;pslist.avg_handlers
+E_full,52,all,1.0,0.2983236998264312,
+E_sage,0,SSG neighbourhood,,0.24958785139079034,

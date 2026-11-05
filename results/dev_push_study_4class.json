@@ -1,0 +1,66 @@
+{
+  "best_hpo": {
+    "num_leaves": 127,
+    "learning_rate": 0.05,
+    "min_child_samples": 20,
+    "colsample_bytree": 0.6,
+    "subsample": 1.0,
+    "reg_lambda": 1.0,
+    "min_split_gain": 0.0,
+    "n_estimators": 125
+  },
+  "results": {
+    "A. tuned family LGBM (single)": {
+      "acc": 0.8784606547960943,
+      "f1_macro": 0.8161221321941736
+    },
+    "   expert lgb_tuned": {
+      "acc": 0.8784606547960943,
+      "f1_macro": 0.8161221321941736
+    },
+    "   expert xgb_gpu": {
+      "acc": 0.8771970132107983,
+      "f1_macro": 0.814179170636562
+    },
+    "   expert extratrees": {
+      "acc": 0.865709362435382,
+      "f1_macro": 0.7968806092820324
+    },
+    "   expert mlp": {
+      "acc": 0.8363009764503159,
+      "f1_macro": 0.7524891339248495
+    },
+    "   expert knn": {
+      "acc": 0.8196438828259621,
+      "f1_macro": 0.7272083348039822
+    },
+    "   expert comm0": {
+      "acc": 0.8822515795519816,
+      "f1_macro": 0.8217363713383282
+    },
+    "   expert comm1": {
+      "acc": 0.6591614014933946,
+      "f1_macro": 0.5005757112653436
+    },
+    "   expert comm2": {
+      "acc": 0.7879379666858127,
+      "f1_macro": 0.6796985271412884
+    },
+    "B0. stack: tuned LGBM + FIG communities": {
+      "acc": 0.88385985066054,
+      "f1_macro": 0.8241619134684623
+    },
+    "B1. stack: + XGB + ET + MLP + kNN (diverse)": {
+      "acc": 0.8852383687535899,
+      "f1_macro": 0.82619823134166
+    },
+    "C. B1 + macro-F1 prior offsets": {
+      "acc": 0.8842044801838024,
+      "f1_macro": 0.8249575469754864
+    },
+    "C. B0 + macro-F1 prior offsets": {
+      "acc": 0.8830557151062608,
+      "f1_macro": 0.8235071698410668
+    }
+  }
+}

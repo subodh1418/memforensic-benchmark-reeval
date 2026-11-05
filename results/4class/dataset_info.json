@@ -1,0 +1,66 @@
+{
+  "initial_rows": 58596,
+  "full_duplicate_rows": 549,
+  "rows_after_dedup": 58027,
+  "n_features": 52,
+  "zero_variance_removed": [
+    "pslist.nprocs64bit",
+    "handles.nport",
+    "svcscan.interactive_process_services"
+  ],
+  "class_counts": {
+    "16class": {
+      "Benign": 29231,
+      "Transponder": 2403,
+      "Shade": 2125,
+      "Ako": 1999,
+      "180solutions": 1999,
+      "CWS": 1999,
+      "Scar": 1999,
+      "Refroso": 1996,
+      "Gator": 1990,
+      "Conti": 1987,
+      "Emotet": 1967,
+      "Zeus": 1946,
+      "Maze": 1754,
+      "Pysa": 1658,
+      "Reconyc": 1568,
+      "TIBS": 1406
+    },
+    "4class": {
+      "Benign": 29231,
+      "Spyware": 9797,
+      "Ransomware": 9523,
+      "Trojan": 9476
+    },
+    "binary": {
+      "Benign": 29231,
+      "Malware": 28796
+    }
+  },
+  "task": "4class",
+  "classes": [
+    "Benign",
+    "Ransomware",
+    "Spyware",
+    "Trojan"
+  ],
+  "families": [
+    "180solutions",
+    "Ako",
+    "Benign",
+    "CWS",
+    "Conti",
+    "Emotet",
+    "Gator",
+    "Maze",
+    "Pysa",
+    "Reconyc",
+    "Refroso",
+    "Scar",
+    "Shade",
+    "TIBS",
+    "Transponder",
+    "Zeus"
+  ]
+}

@@ -1,0 +1,13 @@
+extractor,variant,model,n_pairs,correct,pair_acc,p_one_sided
+Volatility 3,absolute,Logistic regression,14,8,0.5714285714285714,0.395263671875
+Volatility 3,absolute,Random forest,14,11,0.7857142857142857,0.0286865234375
+Volatility 3,paired,Logistic regression,14,12,0.8571428571428571,0.0064697265625
+Volatility 3,paired,Random forest,14,7,0.5,0.604736328125
+Volatility 3,loader (paired),Logistic regression,14,12,0.8571428571428571,0.0064697265625
+Volatility 3,loader (paired),Random forest,14,12,0.8571428571428571,0.0064697265625
+Volatility 2.6,absolute,Logistic regression,7,6,0.8571428571428571,0.0625
+Volatility 2.6,absolute,Random forest,7,6,0.8571428571428571,0.0625
+Volatility 2.6,paired,Logistic regression,7,5,0.7142857142857143,0.2265625
+Volatility 2.6,paired,Random forest,7,7,1.0,0.0078125
+Volatility 2.6,loader (paired),Logistic regression,7,6,0.8571428571428571,0.0625
+Volatility 2.6,loader (paired),Random forest,7,6,0.8571428571428571,0.0625

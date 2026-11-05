@@ -1,0 +1,245 @@
+{
+  "test_row": 32548,
+  "true_class": "Maze",
+  "predicted_class": "Maze",
+  "task_probabilities": {
+    "180solutions": 0.015679601601715977,
+    "Ako": 0.011059209369571037,
+    "Benign": 2.7040319939258706e-05,
+    "CWS": 0.02326708162874131,
+    "Conti": 0.04983501738815069,
+    "Emotet": 0.01705314122719344,
+    "Gator": 0.0063582223165502315,
+    "Maze": 0.6761801993721663,
+    "Pysa": 0.026253209326985553,
+    "Reconyc": 0.007083781659999086,
+    "Refroso": 0.006041673067164374,
+    "Scar": 0.022608967659676897,
+    "Shade": 0.015349265070757465,
+    "TIBS": 0.009125114958265474,
+    "Transponder": 0.10649683268134047,
+    "Zeus": 0.007581642351782424
+  },
+  "lhg_path": {
+    "P(malware)": 0.9999400234801099,
+    "top_families": {
+      "Maze": 0.7227995723440026,
+      "Transponder": 0.07091228449429493,
+      "Conti": 0.06481183257949442
+    }
+  },
+  "fig_evidence": [
+    {
+      "feature": "handles.nsection",
+      "value": 137.0,
+      "shap": 0.7171110107114941,
+      "community": 0
+    },
+    {
+      "feature": "handles.nmutant",
+      "value": 226.0,
+      "shap": 0.6232289236793523,
+      "community": 0
+    },
+    {
+      "feature": "ldrmodules.not_in_load",
+      "value": 44.0,
+      "shap": 0.5091906304545902,
+      "community": 0
+    },
+    {
+      "feature": "handles.nkey",
+      "value": 626.0,
+      "shap": 0.48229371641034086,
+      "community": 0
+    },
+    {
+      "feature": "dlllist.avg_dlls_per_proc",
+      "value": 38.28947368,
+      "shap": 0.4729033273293065,
+      "community": 2
+    },
+    {
+      "feature": "ldrmodules.not_in_mem",
+      "value": 44.0,
+      "shap": 0.46673800302744617,
+      "community": 0
+    },
+    {
+      "feature": "handles.nhandles",
+      "value": 7731.0,
+      "shap": 0.44941672334744925,
+      "community": 0
+    },
+    {
+      "feature": "handles.nthread",
+      "value": 642.0,
+      "shap": 0.31287020161072887,
+      "community": 0
+    }
+  ],
+  "fig_evidence_edges": [
+    {
+      "u": "handles.nsection",
+      "v": "handles.nmutant",
+      "weight": 0.8961298376467666
+    },
+    {
+      "u": "handles.nsection",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.8416573639786605
+    },
+    {
+      "u": "handles.nsection",
+      "v": "ldrmodules.not_in_mem",
+      "weight": 0.8417208945625247
+    },
+    {
+      "u": "handles.nmutant",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.9284157928241386
+    },
+    {
+      "u": "handles.nmutant",
+      "v": "ldrmodules.not_in_mem",
+      "weight": 0.928495519780297
+    },
+    {
+      "u": "ldrmodules.not_in_load",
+      "v": "ldrmodules.not_in_mem",
+      "weight": 0.9999325566294063
+    },
+    {
+      "u": "handles.nkey",
+      "v": "handles.nsection",
+      "weight": 0.83079914688121
+    },
+    {
+      "u": "handles.nkey",
+      "v": "handles.nmutant",
+      "weight": 0.9160416525762796
+    },
+    {
+      "u": "handles.nkey",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.9081401153158678
+    },
+    {
+      "u": "handles.nkey",
+      "v": "ldrmodules.not_in_mem",
+      "weight": 0.9081393342421137
+    },
+    {
+      "u": "handles.nkey",
+      "v": "handles.nthread",
+      "weight": 0.8116888157092702
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nsection",
+      "weight": 0.7577325829037117
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nmutant",
+      "weight": 0.7758943560138435
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.7010450821510441
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nkey",
+      "weight": 0.6791138459098686
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "ldrmodules.not_in_mem",
+      "weight": 0.7009863845840351
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nhandles",
+      "weight": 0.771286002069885
+    },
+    {
+      "u": "dlllist.avg_dlls_per_proc",
+      "v": "handles.nthread",
+      "weight": 0.8052311897386275
+    },
+    {
+      "u": "handles.nhandles",
+      "v": "handles.nsection",
+      "weight": 0.9500346022238113
+    },
+    {
+      "u": "handles.nhandles",
+      "v": "handles.nmutant",
+      "weight": 0.9317046976766311
+    },
+    {
+      "u": "handles.nhandles",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.8805421913775574
+    },
+    {
+      "u": "handles.nhandles",
+      "v": "handles.nkey",
+      "weight": 0.8608094757573701
+    },
+    {
+      "u": "handles.nhandles",
+      "v": "ldrmodules.not_in_mem",
+      "weight": 0.8805791771602833
+    },
+    {
+      "u": "handles.nhandles",
+      "v": "handles.nthread",
+      "weight": 0.9713360935556137
+    },
+    {
+      "u": "handles.nthread",
+      "v": "handles.nsection",
+      "weight": 0.9398420161242571
+    },
+    {
+      "u": "handles.nthread",
+      "v": "handles.nmutant",
+      "weight": 0.9112308117582405
+    },
+    {
+      "u": "handles.nthread",
+      "v": "ldrmodules.not_in_load",
+      "weight": 0.854203523873453
+    },
+    {
+      "u": "handles.nthread",
+      "v": "ldrmodules.not_in_mem",
+      "weight": 0.8541666803700838
+    }
+  ],
+  "ssg_prototypes": [
+    {
+      "family": "Maze",
+      "distance": 0.0399899035692215
+    },
+    {
+      "family": "Transponder",
+      "distance": 0.05797068029642105
+    },
+    {
+      "family": "Maze",
+      "distance": 0.06596194952726364
+    },
+    {
+      "family": "Maze",
+      "distance": 0.2660527527332306
+    },
+    {
+      "family": "Refroso",
+      "distance": 0.3274974822998047
+    }
+  ]
+}

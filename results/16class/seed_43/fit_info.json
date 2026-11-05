@@ -1,0 +1,78 @@
+{
+  "fusion_weights": {
+    "E_full+E_comm0+E_comm1+E_comm2+E_sage|meta=True": 1.0,
+    "E_full+E_sage|meta=True": 0.35,
+    "E_full+E_comm0+E_comm1+E_comm2|meta=True": 0.4,
+    "E_full+E_comm0+E_comm1+E_comm2+E_sage|meta=False": 0.35
+  },
+  "communities": [
+    [
+      "pslist.nproc",
+      "dlllist.ndlls",
+      "handles.nhandles",
+      "handles.nfile",
+      "handles.nevent",
+      "handles.ndesktop",
+      "handles.nkey",
+      "handles.nthread",
+      "handles.ndirectory",
+      "handles.nsemaphore",
+      "handles.ntimer",
+      "handles.nsection",
+      "handles.nmutant",
+      "ldrmodules.not_in_load",
+      "ldrmodules.not_in_init",
+      "ldrmodules.not_in_mem",
+      "ldrmodules.not_in_load_avg",
+      "ldrmodules.not_in_init_avg",
+      "ldrmodules.not_in_mem_avg",
+      "malfind.ninjections",
+      "malfind.commitCharge",
+      "malfind.protection",
+      "malfind.uniqueInjections",
+      "modules.nmodules",
+      "svcscan.nactive"
+    ],
+    [
+      "psxview.not_in_pslist",
+      "psxview.not_in_eprocess_pool",
+      "psxview.not_in_ethread_pool",
+      "psxview.not_in_pspcid_list",
+      "psxview.not_in_csrss_handles",
+      "psxview.not_in_session",
+      "psxview.not_in_deskthrd",
+      "psxview.not_in_pslist_false_avg",
+      "psxview.not_in_eprocess_pool_false_avg",
+      "psxview.not_in_ethread_pool_false_avg",
+      "psxview.not_in_pspcid_list_false_avg",
+      "psxview.not_in_csrss_handles_false_avg",
+      "psxview.not_in_session_false_avg",
+      "psxview.not_in_deskthrd_false_avg"
+    ],
+    [
+      "pslist.nppid",
+      "pslist.avg_threads",
+      "pslist.avg_handlers",
+      "dlllist.avg_dlls_per_proc",
+      "handles.avg_handles_per_proc",
+      "svcscan.nservices",
+      "svcscan.kernel_drivers",
+      "svcscan.fs_drivers",
+      "svcscan.process_services",
+      "svcscan.shared_process_services",
+      "callbacks.ncallbacks",
+      "callbacks.nanonymous",
+      "callbacks.ngeneric"
+    ]
+  ],
+  "graph_timings_s": {
+    "fig_s": 1.2314534187316895,
+    "ssg_s": 5.481236696243286
+  },
+  "expert_best_iterations": {
+    "E_full": 666,
+    "E_comm0": 683,
+    "E_comm1": 487,
+    "E_comm2": 501
+  }
+}

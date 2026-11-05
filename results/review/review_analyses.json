@@ -1,0 +1,355 @@
+{
+  "M4_inference_timing": {
+    "binary": {
+      "memtgf_ms_per_dump": 0.9049329695670016,
+      "lightgbm_ms_per_dump": 0.03712107983751074,
+      "n_test": 8705
+    },
+    "4class": {
+      "memtgf_ms_per_dump": 0.9793985065870898,
+      "lightgbm_ms_per_dump": 0.10254528431787804,
+      "n_test": 8705
+    },
+    "16class": {
+      "memtgf_ms_per_dump": 1.2040391843872962,
+      "lightgbm_ms_per_dump": 0.2455325100446812,
+      "n_test": 8705
+    }
+  },
+  "M8_cover_hart": {
+    "4class": {
+      "standardised_euclidean": {
+        "one_nn_error": 0.18058587018954625,
+        "bayes_error_lower_bound": 0.09650126445582141,
+        "accuracy_upper_bound": 0.9034987355441786
+      },
+      "quantile_manhattan": {
+        "one_nn_error": 0.17036186099942563,
+        "bayes_error_lower_bound": 0.09066047877407588,
+        "accuracy_upper_bound": 0.9093395212259241
+      }
+    },
+    "16class": {
+      "standardised_euclidean": {
+        "one_nn_error": 0.30924755887421024,
+        "bayes_error_lower_bound": 0.17004533452755144,
+        "accuracy_upper_bound": 0.8299546654724486
+      },
+      "quantile_manhattan": {
+        "one_nn_error": 0.30074669730040204,
+        "bayes_error_lower_bound": 0.16487057959143628,
+        "accuracy_upper_bound": 0.8351294204085637
+      }
+    }
+  },
+  "m1_mcnemar_per_seed": {
+    "4class|Soft-vote ensemble (LGBM+XGB+RF)": {
+      "per_seed": [
+        {
+          "seed": "seed_42",
+          "memtgf_only": 162,
+          "baseline_only": 134,
+          "p": 0.11641751060220035
+        },
+        {
+          "seed": "seed_43",
+          "memtgf_only": 111,
+          "baseline_only": 93,
+          "p": 0.2338742169927189
+        },
+        {
+          "seed": "seed_44",
+          "memtgf_only": 127,
+          "baseline_only": 122,
+          "p": 0.7999515351297227
+        },
+        {
+          "seed": "seed_45",
+          "memtgf_only": 115,
+          "baseline_only": 88,
+          "p": 0.06776079349097922
+        },
+        {
+          "seed": "seed_46",
+          "memtgf_only": 100,
+          "baseline_only": 100,
+          "p": 1.0
+        }
+      ],
+      "fisher_combined_p": 0.22160825949093127,
+      "seeds_p_lt_0.05": 0
+    },
+    "4class|LightGBM": {
+      "per_seed": [
+        {
+          "seed": "seed_42",
+          "memtgf_only": 162,
+          "baseline_only": 127,
+          "p": 0.04531303895515675
+        },
+        {
+          "seed": "seed_43",
+          "memtgf_only": 118,
+          "baseline_only": 72,
+          "p": 0.0010426532907652092
+        },
+        {
+          "seed": "seed_44",
+          "memtgf_only": 136,
+          "baseline_only": 123,
+          "p": 0.4559478430606691
+        },
+        {
+          "seed": "seed_45",
+          "memtgf_only": 111,
+          "baseline_only": 75,
+          "p": 0.010087181693807162
+        },
+        {
+          "seed": "seed_46",
+          "memtgf_only": 84,
+          "baseline_only": 54,
+          "p": 0.013273216041919278
+        }
+      ],
+      "fisher_combined_p": 2.2240349336484345e-05,
+      "seeds_p_lt_0.05": 4
+    },
+    "4class|XGBoost": {
+      "per_seed": [
+        {
+          "seed": "seed_42",
+          "memtgf_only": 167,
+          "baseline_only": 148,
+          "p": 0.3104913008187492
+        },
+        {
+          "seed": "seed_43",
+          "memtgf_only": 132,
+          "baseline_only": 110,
+          "p": 0.17691589201058056
+        },
+        {
+          "seed": "seed_44",
+          "memtgf_only": 147,
+          "baseline_only": 136,
+          "p": 0.5522952923876203
+        },
+        {
+          "seed": "seed_45",
+          "memtgf_only": 135,
+          "baseline_only": 105,
+          "p": 0.060988961692255976
+        },
+        {
+          "seed": "seed_46",
+          "memtgf_only": 136,
+          "baseline_only": 124,
+          "p": 0.4951928420306826
+        }
+      ],
+      "fisher_combined_p": 0.17342783565860173,
+      "seeds_p_lt_0.05": 0
+    },
+    "16class|Soft-vote ensemble (LGBM+XGB+RF)": {
+      "per_seed": [
+        {
+          "seed": "seed_42",
+          "memtgf_only": 179,
+          "baseline_only": 142,
+          "p": 0.0443345283856893
+        },
+        {
+          "seed": "seed_43",
+          "memtgf_only": 263,
+          "baseline_only": 225,
+          "p": 0.0938502694548309
+        },
+        {
+          "seed": "seed_44",
+          "memtgf_only": 224,
+          "baseline_only": 148,
+          "p": 9.577493308668155e-05
+        },
+        {
+          "seed": "seed_45",
+          "memtgf_only": 215,
+          "baseline_only": 177,
+          "p": 0.06151513636323989
+        },
+        {
+          "seed": "seed_46",
+          "memtgf_only": 195,
+          "baseline_only": 153,
+          "p": 0.02781714858976664
+        }
+      ],
+      "fisher_combined_p": 6.873805935658155e-06,
+      "seeds_p_lt_0.05": 3
+    },
+    "16class|LightGBM": {
+      "per_seed": [
+        {
+          "seed": "seed_42",
+          "memtgf_only": 140,
+          "baseline_only": 87,
+          "p": 0.0005293367138093001
+        },
+        {
+          "seed": "seed_43",
+          "memtgf_only": 277,
+          "baseline_only": 203,
+          "p": 0.0008442275727187155
+        },
+        {
+          "seed": "seed_44",
+          "memtgf_only": 209,
+          "baseline_only": 125,
+          "p": 5.011431898106238e-06
+        },
+        {
+          "seed": "seed_45",
+          "memtgf_only": 173,
+          "baseline_only": 141,
+          "p": 0.08005109637327304
+        },
+        {
+          "seed": "seed_46",
+          "memtgf_only": 161,
+          "baseline_only": 142,
+          "p": 0.30109338860934964
+        }
+      ],
+      "fisher_combined_p": 2.242550547402382e-09,
+      "seeds_p_lt_0.05": 3
+    },
+    "16class|XGBoost": {
+      "per_seed": [
+        {
+          "seed": "seed_42",
+          "memtgf_only": 212,
+          "baseline_only": 138,
+          "p": 9.023854097691448e-05
+        },
+        {
+          "seed": "seed_43",
+          "memtgf_only": 288,
+          "baseline_only": 229,
+          "p": 0.010676545638252117
+        },
+        {
+          "seed": "seed_44",
+          "memtgf_only": 255,
+          "baseline_only": 154,
+          "p": 6.735697918746798e-07
+        },
+        {
+          "seed": "seed_45",
+          "memtgf_only": 244,
+          "baseline_only": 173,
+          "p": 0.0005917785259225775
+        },
+        {
+          "seed": "seed_46",
+          "memtgf_only": 212,
+          "baseline_only": 176,
+          "p": 0.07545635577160491
+        }
+      ],
+      "fisher_combined_p": 2.8276816038968212e-12,
+      "seeds_p_lt_0.05": 4
+    }
+  },
+  "m4_zeus_medians": {
+    "Zeus": {
+      "handles.nfile": 640.0,
+      "svcscan.nservices": 389.0,
+      "handles.avg_handles_per_proc": 211.89,
+      "dlllist.avg_dlls_per_proc": 39.05,
+      "handles.nsection": 176.0,
+      "handles.nkey": 667.0,
+      "malfind.ninjections": 3.0,
+      "ldrmodules.not_in_load": 45.0
+    },
+    "Trojan (other families)": {
+      "handles.nfile": 646.0,
+      "svcscan.nservices": 389.0,
+      "handles.avg_handles_per_proc": 208.65,
+      "dlllist.avg_dlls_per_proc": 38.9,
+      "handles.nsection": 177.0,
+      "handles.nkey": 678.0,
+      "malfind.ninjections": 3.0,
+      "ldrmodules.not_in_load": 47.0
+    },
+    "Ransomware": {
+      "handles.nfile": 648.0,
+      "svcscan.nservices": 389.0,
+      "handles.avg_handles_per_proc": 209.3,
+      "dlllist.avg_dlls_per_proc": 38.69,
+      "handles.nsection": 177.0,
+      "handles.nkey": 679.0,
+      "malfind.ninjections": 3.0,
+      "ldrmodules.not_in_load": 45.0
+    },
+    "Spyware": {
+      "handles.nfile": 646.0,
+      "svcscan.nservices": 389.0,
+      "handles.avg_handles_per_proc": 210.56,
+      "dlllist.avg_dlls_per_proc": 38.88,
+      "handles.nsection": 177.0,
+      "handles.nkey": 675.0,
+      "malfind.ninjections": 3.0,
+      "ldrmodules.not_in_load": 46.0
+    }
+  },
+  "m4_zeus_centroid_distance": {
+    "Trojan (other families)": 0.7360995411872864,
+    "Ransomware": 0.9224647283554077,
+    "Spyware": 0.9526911973953247
+  },
+  "m5_psxview": {
+    "Benign": {
+      "share_any_hidden": 1.0,
+      "mean_total_hidden": 22.911874379939107,
+      "share_hidden_ge2": 1.0
+    },
+    "Ransomware": {
+      "share_any_hidden": 1.0,
+      "mean_total_hidden": 25.693478945710385,
+      "share_hidden_ge2": 1.0
+    },
+    "Spyware": {
+      "share_any_hidden": 1.0,
+      "mean_total_hidden": 27.87557415535368,
+      "share_hidden_ge2": 1.0
+    },
+    "Trojan": {
+      "share_any_hidden": 1.0,
+      "mean_total_hidden": 24.21612494723512,
+      "share_hidden_ge2": 1.0
+    }
+  },
+  "Q1_fusion_weights": {
+    "binary": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "4class": [
+      0.7,
+      0.45,
+      0.55,
+      0.45,
+      0.35
+    ],
+    "16class": [
+      0.4,
+      1.0,
+      0.55,
+      0.55,
+      0.55
+    ]
+  }
+}

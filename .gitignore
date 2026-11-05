@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.joblib
+*.raw
+*.mem
+*.vmem
+*.zip
+.ipynb_checkpoints/

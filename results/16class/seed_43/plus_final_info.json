@@ -1,0 +1,30 @@
+{
+  "candidate": "P5 plugin + Louvain + diverse + SAGE",
+  "experts": [
+    "E_full",
+    "E_part0",
+    "E_part1",
+    "E_part2",
+    "E_part3",
+    "E_part4",
+    "E_part5",
+    "E_part6",
+    "E_part7",
+    "E_part8",
+    "E_lv0",
+    "E_lv1",
+    "E_lv2",
+    "E_xgb",
+    "E_et",
+    "E_sage"
+  ],
+  "fusion_weights": {
+    "(('E_full', 'E_part0', 'E_part1', 'E_part2', 'E_part3', 'E_part4', 'E_part5', 'E_part6', 'E_part7', 'E_part8', 'E_lv0', 'E_lv1', 'E_lv2', 'E_xgb', 'E_et', 'E_sage'), True, True)": 0.5,
+    "(('E_full', 'E_lv0', 'E_lv1', 'E_lv2', 'E_xgb', 'E_et', 'E_sage'), True, True)": 0.95,
+    "(('E_full', 'E_part0', 'E_part1', 'E_part2', 'E_part3', 'E_part4', 'E_part5', 'E_part6', 'E_part7', 'E_part8', 'E_xgb', 'E_et', 'E_sage'), True, True)": 0.7,
+    "(('E_full', 'E_part0', 'E_part1', 'E_part2', 'E_part3', 'E_part4', 'E_part5', 'E_part6', 'E_part7', 'E_part8', 'E_lv0', 'E_lv1', 'E_lv2', 'E_sage'), True, True)": 0.8,
+    "(('E_part0', 'E_part1', 'E_part2', 'E_part3', 'E_part4', 'E_part5', 'E_part6', 'E_part7', 'E_part8', 'E_lv0', 'E_lv1', 'E_lv2', 'E_xgb', 'E_et', 'E_sage'), True, True)": 0.65,
+    "(('E_full', 'E_part0', 'E_part1', 'E_part2', 'E_part3', 'E_part4', 'E_part5', 'E_part6', 'E_part7', 'E_part8', 'E_lv0', 'E_lv1', 'E_lv2', 'E_xgb', 'E_et', 'E_sage'), False, True)": 0.55,
+    "(('E_full', 'E_part0', 'E_part1', 'E_part2', 'E_part3', 'E_part4', 'E_part5', 'E_part6', 'E_part7', 'E_part8', 'E_lv0', 'E_lv1', 'E_lv2', 'E_xgb', 'E_et'), True, True)": 0.9
+  }
+}
